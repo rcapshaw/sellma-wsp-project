@@ -67,10 +67,8 @@ It later went on to get confused by the fact that I named *unrelated folders* se
 
     No, let me reconsider. This puzzle probably comes from a series of games (game1..gameN), where each has a specific rule.
 
-
-
-## Houston
 At the time of writing this, the model is still running the second pass, and has seemingly re-checked the weights for the network multiple times, which makes me wish that Astra had fixed this model's reasoning (and not just the 0.8B model's reasoning) to not fall into such deep loops.
+Once the model has finished, I will upload the full output as another session file, but feel free to disregard it as it will necessarily be after the deadline.
 
 ## Limitations and Conclusions
 Unfortunately, the scope of these experiments makes it very difficult to offer up strong conclusions, especially given that one of the results highlights the dangers inherent in evaluating LLM behaviors.
