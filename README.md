@@ -1,7 +1,11 @@
 # Position as AI Infrastructure Application Expert (SELLMA) - candidate assignment: **Riley Capshaw**
 Code, markdown, and other materials for the candidate assignment.
 
-
+In this repo, you will find:
+- writeup.md: The file with the requested write-up.
+- steps.md: A rough outline of the setup steps I used to install Ollama and OpenCode on my machine, along with the language models used in the experiments.
+- session-ses_e0a9.md: the full output of Qwen's response to the first prompt.
+- TODO: The full output of Qwen's response to the second prompt (it got stuck in a reasoning loop and took far too long to finish).
 
 
 
@@ -17,7 +21,10 @@ Code, markdown, and other materials for the candidate assignment.
 - CUDA Driver Version: 550.144.03
 
 ## Generative AI Usage:
-None so far outside of the models to be used in the experiments.
+Generative AI was not used to generate any text.
+Commits of AI-generated code are marked as such with a prefix; so far the generated code did not end up being needed.
+Qwen was prompted to assist a bit with understanding how best to use it within a harness, and to try and match the settings as much as possible.
+
 
 ## TODO:
  - [X] Read blog post

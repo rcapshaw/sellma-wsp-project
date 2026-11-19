@@ -78,5 +78,24 @@ So the architecture is: **32 → 32 → 32 → 5** (assuming the first row of W1
 
 The 5 output units suggest a **5-class classification** task.
 ```
-Not a great answer. Going to try a Mistral model, if I can get one to run.
+Not a great answer. Going to try a Mistral model, if I can get one to run.... Similar response. Turns out it's due to the context issue from above, the models are not receiving the full file.
+
+Re-running it using a harness (so it can read the file directly) on Qwen:
+```
+Read ~/data/git/lm_understand-logs/expl_which_game/runs/breakout/prompt.txt in full (every line, including every weight) and answer the QUESTION inside it, following the requested Observations/Reasoning/Game/Description/Confidence format.
+```
+(Qwen suggested this format of prompt, so I ran with it.)
+
+Then, because Qwen referred to the folder name in its reasoning..... I changed the folder name and removed all references to all games in the super directory to try and reduce the number of hints. Then also deleted files from the original repo's runs, because that was silly to leave in.
+```bash
+mv breakout/ game1/
+mv freeway/ game2/
+...
+```
+And the new prompt:
+```
+Read ~/data/git/lm_understand-logs/expl_which_game/runs/game1/prompt.txt in full (every line, including every weight) and answer the QUESTION inside it, following the requested Observations/Reasoning/Game/Description/Confidence format.
+```
+
+
 
