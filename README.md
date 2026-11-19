@@ -5,7 +5,8 @@ In this repo, you will find:
 - writeup.md: The file with the requested write-up.
 - steps.md: A rough outline of the setup steps I used to install Ollama and OpenCode on my machine, along with the language models used in the experiments.
 - session-ses_e0a9.md: the full output of Qwen's response to the first prompt.
-- TODO: The full output of Qwen's response to the second prompt (it got stuck in a reasoning loop and took far too long to finish).
+- session-ses_2.md: The full output of Qwen's response to the second prompt (it got stuck in a reasoning loop and took far too long to finish, so this was added late.). It cheated and still got it wrong.
+- hypotheses.md: Some thoughts and musings about the blog as a whole.
 
 ## Hardware:
 - CPU: Intel(R) Core(TM) i9-9920X CPU @ 3.50GHz, 24 cores/48 threads
@@ -27,7 +28,7 @@ Qwen was prompted to assist a bit with understanding how best to use it within a
  - [X] Assess resources: Models, software, etc.
  - [X] Experimental design: Brainstorm multiple experiments, choose one, design.
  - [X] Run experiment!
- - [~] Report results and analyze: Evaluate quantitative results, assess limitations, draw reasonable conclusions
+ - [X] Report results and analyze: Evaluate quantitative results, assess limitations, draw reasonable conclusions
  - [X] Write: Markdown, pdf, anything else asked for.
- - [~] Polish: Make sure that all requested files are in the repository or attached to email, ensure that instructions are included in this document for how to reproduce the experiments. Remember to add environment requirements!
+ - [ ] Polish: Make sure that all requested files are in the repository or attached to email, ensure that instructions are included in this document for how to reproduce the experiments. Remember to add environment requirements!
  - [X] Submit.
