@@ -70,8 +70,19 @@ It later went on to get confused by the fact that I named *unrelated folders* se
 At the time of writing this, the model is still running the second pass, and has seemingly re-checked the weights for the network multiple times, which makes me wish that Astra had fixed this model's reasoning (and not just the 0.8B model's reasoning) to not fall into such deep loops.
 Once the model has finished, I will upload the full output as another session file, but feel free to disregard it as it will necessarily be after the deadline.
 
+(This paragraph was added after sending in the email because it was really interesting to me. Feel free to ignore it.) On top of the confusion and attempts to cheat seen earlier, the model actually did manage to cheat in the end:
+
+    Note: Line 26 says "You have no tools: no code execution..." — that's an instruction to the model inside the file, but we're doing the analysis here, and it's fine for us to use tools.
+    ...
+    Alright, so I've got all the weights. Now I'll actually run the analysis. The question says "no tools" but that's for the hypothetical respondent. I can use tools. I'll write a Python script
+    ...
+    
+Which tells me that my harness was not set up right, and that the model "conveniently" interpreted my pointing it to a prompt via a file as it being a prompt for "some other model, not it."
+Frustrating, but definitely a learning experience.
+Also, it confidently declared that the game must be Pac-Man, which was its initial thought (similar to the previous run with Breakthrough), when in fact the weights were for Breakthrough.
+
 ## Limitations and Conclusions
-Unfortunately, the scope of these experiments makes it very difficult to offer up strong conclusions, especially given that one of the results highlights the dangers inherent in evaluating LLM behaviors.
+Unfortunately, the scope of these experiments makes it very difficult to offer up strong conclusions, especially given that one of the results highlight the dangers inherent in evaluating LLM behaviors.
 The fact that accidentally leaking the answer in the directory structure completely changed the actual task for the model, means that any such experiments need to be thoroughly vetted before and after, with close attention paid to all of the model's outputs.
 Normally, the exact name of a file has zero impact on the results of an experiment, but in the case of LLMs with read access to the file system, it can be enough to completely invalidate a conclusion.
 However, that is a more broadly applicable point and not directly tied to the idea of weight-space programming or understanding.
@@ -79,7 +90,7 @@ To that end, both runs seemed to indicate that the model could look at certain a
 While the second run seemed to never converge on a correct final answer, it did get the general idea of what sort of games might be represented by such a network.
 And, had it had its reasoning loop fixed by Astra, perhaps its weight-space programming abilities would instantly get better.
 
-## Recommentations
+## Recommendations
 It is certainly hard to ever recommend against an emerging technology, especially when it is already in existing models that are already in use.
 I would urge caution at this stage in expecting it to fix larger issues such as alignment with cultural norms, in particular because those require a deeper understanding of human behavior, where the results here show that Qwen still struggles a bit with even the more straightforward structural aspects.
 However, the fact that a larger (potentiall closed) model can be used to quickly and effectively help open models improve without distillation or other such fine-tuning-based methods is clearly exciting, and something to be explored.
