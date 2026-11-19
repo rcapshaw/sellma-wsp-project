@@ -21,7 +21,7 @@ None so far outside of the models to be used in the experiments.
 
 ## TODO:
  - [X] Read blog post
- - [ ] Set up git
+ - [X] Set up git
  - [ ] Choose hypothesis: Write thoughts, formulate hypotheses, choose one
  - [ ] Assess resources: Models, software, etc.
  - [ ] Experimental design: Brainstorm multiple experiments, choose one, design.
