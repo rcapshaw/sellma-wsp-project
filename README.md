@@ -7,12 +7,6 @@ In this repo, you will find:
 - session-ses_e0a9.md: the full output of Qwen's response to the first prompt.
 - TODO: The full output of Qwen's response to the second prompt (it got stuck in a reasoning loop and took far too long to finish).
 
-
-
-
-
-
-
 ## Hardware:
 - CPU: Intel(R) Core(TM) i9-9920X CPU @ 3.50GHz, 24 cores/48 threads
 - RAM: 128GB
@@ -29,11 +23,11 @@ Qwen was prompted to assist a bit with understanding how best to use it within a
 ## TODO:
  - [X] Read blog post
  - [X] Set up git
- - [ ] Choose hypothesis: Write thoughts, formulate hypotheses, choose one
- - [ ] Assess resources: Models, software, etc.
- - [ ] Experimental design: Brainstorm multiple experiments, choose one, design.
- - [ ] Run experiment!
- - [ ] Report results and analyze: Evaluate quantitative results, assess limitations, draw reasonable conclusions
- - [ ] Write: Markdown, pdf, anything else asked for.
- - [ ] Polish: Make sure that all requested files are in the repository or attached to email, ensure that instructions are included in this document for how to reproduce the experiments. Remember to add environment requirements!
- - [ ] Submit.
+ - [X] Choose hypothesis: Write thoughts, formulate hypotheses, choose one
+ - [X] Assess resources: Models, software, etc.
+ - [X] Experimental design: Brainstorm multiple experiments, choose one, design.
+ - [X] Run experiment!
+ - [~] Report results and analyze: Evaluate quantitative results, assess limitations, draw reasonable conclusions
+ - [X] Write: Markdown, pdf, anything else asked for.
+ - [~] Polish: Make sure that all requested files are in the repository or attached to email, ensure that instructions are included in this document for how to reproduce the experiments. Remember to add environment requirements!
+ - [X] Submit.
